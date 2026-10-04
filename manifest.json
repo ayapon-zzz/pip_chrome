@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "PiP Chrome",
+  "version": "1.0.0",
+  "description": "現在のタブ内の動画をピクチャインピクチャで表示します。",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PiP Chrome"
+  }
+}
