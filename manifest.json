@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "U-NEXT PiP Keeper",
+  "version": "1.0.0",
+  "description": "U-NEXTで次のエピソードが自動再生されたとき、ピクチャーインピクチャーを新しい動画へ自動で引き継ぎます。",
+  "minimum_chrome_version": "111",
+  "content_scripts": [
+    {
+      "matches": ["https://*.unext.jp/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    },
+    {
+      "matches": ["https://*.unext.jp/*"],
+      "js": ["page.js"],
+      "run_at": "document_start",
+      "all_frames": true,
+      "world": "MAIN"
+    }
+  ]
+}
